@@ -19,8 +19,8 @@ export default function Header(props) {
         <Route path="/sign-up">
           <Link to="/sign-in" className="header__link">Вход</Link>
         </Route>
-        <Route path="/mesto">
-          <p className="header__user-mail">{props.email}</p>
+        <Route exact path="/">
+          <p className="header__user-email">{props.email}</p>
           <button onClick={signOut} className="header__link">Выход</button>
         </Route>
       </div>
