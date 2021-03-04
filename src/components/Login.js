@@ -1,6 +1,5 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-// import * as auth from '../utils/auth';
 
 function Login(props) {
   const [inputValue, setInputValue] = React.useState({
@@ -18,19 +17,6 @@ function Login(props) {
 
   function handleSubmit(e){
     e.preventDefault();
-    // const {password, email} = inputValue;
-    // if (!email || !password){
-    //   return;
-    // }
-    // auth.authorize(password, email)
-    //   .then((data) => {
-    //     if (data.token){
-    //       setInputValue({email: '', password: ''});
-    //       props.onLogin();
-    //       props.history.push('/');
-    //     }
-    //   })
-    //   .catch(err => console.log(err));
     props.onLogin({
       inputValue, 
       setInputValue
