@@ -47,6 +47,7 @@ export default function App() {
           data.setInputValue({email: '', password: ''});
           setLoggedIn(true);
           history.push('/');
+          setHeaderEmail(email);
         }
       })
       .catch((res) => {
